@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
-import NoteItem from '../notes/NoteItem.vue'
+import NoteItem from '@/components/notes/NoteItem.vue'
 
 const mockNote = {
   _uuid: '123',

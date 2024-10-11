@@ -14,6 +14,16 @@ const router = createRouter({
       name: 'notas',
       component: () => import('@/views/NotesView.vue'),
     },
+    {
+      path: '/notas/nueva',
+      name: 'nueva-nota',
+      component: () => import('@/views/NoteFormView.vue'),
+    },
+    {
+      path: '/notas/editar/:id',
+      name: 'editar-nota',
+      component: () => import('@/views/NoteFormView.vue'),
+    },
   ],
 })
 

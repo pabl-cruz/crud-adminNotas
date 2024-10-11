@@ -1,0 +1,7 @@
+@import './abstracts/variables';
+@import './vendors/bootstrap_overrides';
+
+body {
+  background-color: aqua;
+  color: $color-dark;
+}

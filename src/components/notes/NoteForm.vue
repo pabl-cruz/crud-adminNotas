@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue'
-import { useNotesStore } from '@/stores/notesStore.js'
 import { useRouter } from 'vue-router'
+import { useNotesStore } from '@/stores/notesStore.js'
 const notesStore = useNotesStore()
-
+const router = useRouter()
 const noteData = ref({
   title: '',
   content: '',

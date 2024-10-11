@@ -1,6 +1,6 @@
 //store de notas
 
-import { createNote } from '@/services/notes.service'
+import { createNote, fetchAllNotes } from '@/services/notes.service'
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
@@ -8,6 +8,13 @@ export const useNotesStore = defineStore('notes', () => {
   const notes = ref([])
   //getter contador de notas con funcion computada
   const notesCount = computed(() => notes.value.length || 0)
+
+  async function getNotes() {
+    const notesData = await fetchAllNotes()
+    if (notesData) {
+      notes.value = notesData
+    }
+  }
 
   //action
   async function addNote(note) {
@@ -18,5 +25,5 @@ export const useNotesStore = defineStore('notes', () => {
     }
     return newNoteData
   }
-  return { notes, notesCount, addNote }
+  return { notes, notesCount, addNote, getNotes }
 })

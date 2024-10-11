@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <div class="container-fluid">
+    <div class="container">
       <RouterLink class="navbar-brand" :to="{}"
         >Administrador de tareas</RouterLink
       >

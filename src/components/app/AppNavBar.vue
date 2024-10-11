@@ -2,12 +2,12 @@
 import { RouterLink } from 'vue-router'
 import { useNotesStore } from '@/stores/notesStore'
 
-const notesStore = useNotesStore
+const notesStore = useNotesStore()
 </script>
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
     <div class="container">
-      <RouterLink class="navbar-brand" :to="{}"
+      <RouterLink class="navbar-brand" :to="{ name: 'home' }"
         >Administrador de tareas</RouterLink
       >
       <button

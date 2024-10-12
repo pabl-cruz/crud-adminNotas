@@ -12,12 +12,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="row">
+  <div class="row g-2">
     <NoteItem
       v-for="note in notes"
       :note="note"
       :key="note._uuid"
-      class="col-12 col-md-6 col-lg-4 col-xl-3 p-2"
+      class="col-12 col-md-6 col-lg-4 col-xl-3 p-2 border border-0"
     />
   </div>
 </template>

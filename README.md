@@ -1,6 +1,6 @@
 # crud-adminnotas
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicación de administración de notas creada en Vue y crud.api.
 
 ## Recommended IDE Setup
 
